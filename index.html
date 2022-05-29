@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="homepage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Better Your Score Bot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img src="images/betteryourscore.jpg" class="logo" />
+    <div class="inputs">
+      <form>
+        <input
+          class="MovieNameInput"
+          type="text"
+          id="movieName"
+          placeholder="Movie Name"
+        /><br /><br />
+        <div class="TechnicalInputs">
+          <label class="ComparativeScore">Comparative score:</label>
+          <input
+            type="number"
+            placeholder="0"
+            id="ComparativeScore"
+          /><br /><br />
+          <label class="Plot">Plot:</label>
+          <input
+            class="Plot"
+            type="number"
+            placeholder="0"
+            id="Plot"
+          /><br /><br />
+          <label class="Acting">Acting:</label>
+          <input type="number" placeholder="0" id="Acting" /><br /><br />
+          <label class="Impact">Impact:</label>
+          <input type="number" placeholder="0" id="Impact" /><br /><br />
+          <label class="CharacterDevelopment">Character Development:</label>
+          <input
+            type="number"
+            placeholder="0"
+            id="CharacterDevelopment"
+          /><br /><br />
+          <label class="Cinematography">Cinematography:</label>
+          <input
+            type="number"
+            placeholder="0"
+            id="Cinematography"
+          /><br /><br />
+          <label class="Pacing">Pacing:</label>
+          <input type="number" placeholder="0" id="Pacing" /><br /><br />
+          <label class="O/C/A">O/C/A:</label>
+          <input type="number" placeholder="0" id="O/C/A" /><br /><br />
+          <label class="Dialogue">Dialogue:</label>
+          <input type="number" placeholder="0" id="Dialogue" /><br /><br />
+          <label class="EditingAndEffects">Editing and Effects:</label>
+          <input
+            type="number"
+            placeholder="0"
+            id="EditingAndEffects"
+          /><br /><br />
+          <label class="SoundAndMusic">Sound and Music:</label>
+          <input type="number" placeholder="0" id="SoundAndMusic" /><br /><br />
+        </div>
+        <input
+          type="button"
+          class="SubmitButton"
+          onclick="funcs()"
+          value="Submit"
+        />
+        <br /><br />
+      </form>
+      <div class="outputs">
+        <p class="ComparativeScoreOutput" id="comparativeScoreOutput">
+          Comparative Score: 0
+        </p>
+        <p class="TechnicalScoreOutput" id="technicalScoreOutput">
+          Technical Score: 0
+        </p>
+        <p class="TotalScoreOutput" id="totalScoreOutput">Total Score: 0</p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
